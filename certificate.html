@@ -4,34 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Verify Certificate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f6fa;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #e9eaef;
+      color: #222;
     }
 
     .header {
-      background: linear-gradient(90deg, #3f5bd5, #2f49c7);
+      background: linear-gradient(180deg, #3f5bd5, #2f49c7);
       color: white;
       text-align: center;
-      padding: 40px 0;
-      font-size: 28px;
-      font-weight: bold;
+      padding: 50px 16px 70px;
+      font-size: 32px;
+      font-weight: 700;
     }
 
     .container {
       display: flex;
       justify-content: center;
-      margin-top: -40px;
+      margin-top: -50px;
+      padding: 0 14px 24px;
     }
 
     .card {
-      background: white;
-      width: 420px;
-      padding: 20px 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: #f7f7f7;
+      width: 100%;
+      max-width: 720px;
+      padding: 22px 18px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       position: relative;
       overflow: hidden;
     }
@@ -41,27 +47,86 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 180px;
+      font-size: 160px;
       color: rgba(0, 150, 0, 0.08);
+      pointer-events: none;
     }
 
     .card h3 {
-      margin-top: 0;
+      margin: 0 0 16px;
+      font-size: 22px;
+      font-weight: 700;
     }
 
     .row {
-      border-top: 1px solid #eee;
-      padding: 10px 0;
-      font-size: 14px;
+      border-top: 1px solid #ddd;
+      padding: 14px 0;
+      font-size: 15px;
+      display: flex;
+      gap: 8px;
     }
 
     .label {
-      font-weight: bold;
+      font-weight: 600;
       color: #333;
+      min-width: 140px;
     }
 
     .value {
       color: #555;
+      flex: 1;
+      word-break: break-word;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 600px) {
+      .header {
+        font-size: 26px;
+        padding: 40px 12px 60px;
+      }
+
+      .container {
+        margin-top: -40px;
+        padding: 0 10px 20px;
+      }
+
+      .card {
+        padding: 18px 14px;
+        border-radius: 12px;
+      }
+
+      .card h3 {
+        font-size: 20px;
+      }
+
+      .row {
+        flex-direction: column;
+        padding: 12px 0;
+        font-size: 14px;
+      }
+
+      .label {
+        min-width: auto;
+      }
+
+      .watermark {
+        font-size: 120px;
+      }
+    }
+
+    /* EXTRA SMALL DEVICES */
+    @media (max-width: 380px) {
+      .header {
+        font-size: 22px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+
+      .row {
+        font-size: 13px;
+      }
     }
   </style>
 </head>
@@ -73,13 +138,13 @@
       <div class="watermark">✔</div>
       <h3>Certificate Details</h3>
 
-      <div class="row"><span class="label">CIN:</span> <span class="value">PIT/SEP25/00867</span></div>
+      <div class="row"><span class="label">CIN:</span> <span class="value">PIT/SEP25/00983</span></div>
       <div class="row"><span class="label">Name:</span> <span class="value">Swetashree Mal</span></div>
-      <div class="row"><span class="label">Internship Track:</span> <span class="value">Web Development</span></div>
+      <div class="row"><span class="label">Internship Track:</span> <span class="value">Generative AI</span></div>
       <div class="row"><span class="label">College:</span> <span class="value">Institute of Engineering and Engineering, Kolkata</span></div>
-      <div class="row"><span class="label">Start Date:</span> <span class="value">01/09/2025</span></div>
-      <div class="row"><span class="label">End Date:</span> <span class="value">30/09/2025</span></div>
-      <div class="row"><span class="label">Issue Date:</span> <span class="value">11/10/2025</span></div>
+      <div class="row"><span class="label">Start Date:</span> <span class="value">01/02/2026</span></div>
+      <div class="row"><span class="label">End Date:</span> <span class="value">31/03/2026</span></div>
+      <div class="row"><span class="label">Issue Date:</span> <span class="value">03/04/2026</span></div>
     </div>
   </div>
 </body>
