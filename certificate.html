@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Certificate</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+    }
+
+    .header {
+      background: linear-gradient(90deg, #3f5bd5, #2f49c7);
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: -40px;
+    }
+
+    .card {
+      background: white;
+      width: 420px;
+      padding: 20px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 180px;
+      color: rgba(0, 150, 0, 0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .row {
+      border-top: 1px solid #eee;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .value {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Verify</div>
+
+  <div class="container">
+    <div class="card">
+      <div class="watermark">✔</div>
+      <h3>Certificate Details</h3>
+
+      <div class="row"><span class="label">CIN:</span> <span class="value">PIT/SEP25/00867</span></div>
+      <div class="row"><span class="label">Name:</span> <span class="value">Swetashree Mal</span></div>
+      <div class="row"><span class="label">Internship Track:</span> <span class="value">Web Development</span></div>
+      <div class="row"><span class="label">College:</span> <span class="value">Institute of Engineering and Engineering, Kolkata</span></div>
+      <div class="row"><span class="label">Start Date:</span> <span class="value">01/09/2025</span></div>
+      <div class="row"><span class="label">End Date:</span> <span class="value">30/09/2025</span></div>
+      <div class="row"><span class="label">Issue Date:</span> <span class="value">11/10/2025</span></div>
+    </div>
+  </div>
+</body>
+</html>
